@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLPrincipalController">
+   <children>
+      <Label fx:id="lbNombre" layoutX="86.0" layoutY="66.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="lbUsuario" layoutX="466.0" layoutY="34.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="86.0" layoutY="24.0" text="Bienvenido(a)">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Button layoutX="466.0" layoutY="60.0" mnemonicParsing="false" onAction="#btnClicCerrarSesion" text="Cerrar Sesión">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="134.0" fitWidth="598.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recurso/NicePng_lineas-azules-png_2933046.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="57.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recurso/logoUV.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="117.0" mnemonicParsing="false" onAction="#clicBtnAdminAlumnos" style="-fx-background-color: ffffff;" text="Administrador de alumnos" underline="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

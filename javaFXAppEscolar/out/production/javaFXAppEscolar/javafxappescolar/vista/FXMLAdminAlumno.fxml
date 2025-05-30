@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLAdminAlumnoController">
+   <children>
+      <TextField fx:id="tfBuscar" layoutX="105.0" layoutY="39.0" promptText="Buscar Alumno">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="310.0" layoutY="39.0" mnemonicParsing="false" onAction="#btnClicAgregar" text="Agregar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="411.0" layoutY="39.0" mnemonicParsing="false" onAction="#btnClicModificar" text="Modificar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="517.0" layoutY="39.0" mnemonicParsing="false" onAction="#btnClicEliminar" text="Eliminar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tvAlumnos" layoutX="15.0" layoutY="106.0" prefHeight="380.0" prefWidth="670.0">
+        <columns>
+          <TableColumn fx:id="colMatricula" prefWidth="75.0" text="Matrícula" />
+          <TableColumn fx:id="colApPaterno" prefWidth="75.0" text="Apellido paterno" />
+            <TableColumn fx:id="colApMaterno" prefWidth="75.0" text="Apellido Materno" />
+            <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre(s)" />
+            <TableColumn fx:id="colFacultad" prefWidth="75.0" text="Facultad" />
+            <TableColumn fx:id="colCarrera" prefWidth="75.0" text="Carrera" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

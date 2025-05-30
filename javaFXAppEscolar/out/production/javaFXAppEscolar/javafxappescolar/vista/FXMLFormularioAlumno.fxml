@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLFormularioAlumnoController">
+   <children>
+      <ImageView fx:id="ivFoto" fitHeight="100.0" fitWidth="100.0" layoutX="515.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="502.0" layoutY="144.0" mnemonicParsing="false" onAction="#clicSeleccionarFoto" text="Seleccionar foto">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="tfNombre" layoutX="53.0" layoutY="223.0" promptText="Nombre(s)" />
+      <TextField fx:id="tfApellidoPaterno" layoutX="244.0" layoutY="223.0" promptText="Apellido Paterno" />
+      <TextField fx:id="tfApellidoMaterno" layoutX="452.0" layoutY="223.0" promptText="Apellido Materno" />
+      <TextField fx:id="tfMatricula" layoutX="53.0" layoutY="307.0" promptText="Matrícula" />
+      <TextField fx:id="tfEmail" layoutX="244.0" layoutY="307.0" promptText="Correo electronico" />
+      <DatePicker fx:id="dpFechaNacimiento" layoutX="452.0" layoutY="307.0" prefHeight="26.0" prefWidth="182.0" promptText="Fecha de nacimiento" />
+      <ComboBox fx:id="cbFacultad" layoutX="53.0" layoutY="392.0" prefWidth="150.0" promptText="Facultad" />
+      <ComboBox fx:id="cbCarrera" layoutX="250.0" layoutY="392.0" prefWidth="150.0" promptText="Carrera" />
+      <Button layoutX="541.0" layoutY="452.0" mnemonicParsing="false" onAction="#clicGuardar" text="Guardar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="451.0" layoutY="452.0" mnemonicParsing="false" onAction="#clicCancelar" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="84.0" fitWidth="69.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recurso/logoUV.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="182.0" layoutY="63.0" text="Agregar Alumno" textFill="#36618f">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="190.0" text="Nombre(s)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="190.0" text="Apellido Paterno">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="190.0" text="Apellido Materno">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="279.0" text="Matrícula">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="279.0" text="Correo Electrónico">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="283.0" text="Fecha de nacimiento">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="356.0" text="Selecciona tu facultad y carrera">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

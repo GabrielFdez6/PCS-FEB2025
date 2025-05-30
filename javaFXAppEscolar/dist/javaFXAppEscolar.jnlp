@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="javaFXAppEscolar.jnlp">
+  <information>
+    <title>javaFXAppEscolar</title>
+    <vendor>gabriel-fdez</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Dglass.gtk.uiScale=2.0 "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="javaFXAppEscolar.jar" size="383853" download="eager" />
+    <jar href="lib/mysql-connector-java-8.0.20.jar" size="2385601" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="javafxappescolar.JavaFXAppEscolar"  name="javaFXAppEscolar" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLInicioSesionController">
+   <children>
+      <AnchorPane prefHeight="402.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="106.0" layoutX="100.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recurso/logoUV.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="402.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="90.0" layoutY="27.0" text="Bienvenido (a)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutY="62.0" prefHeight="36.0" prefWidth="279.0" text="Ingresa tu usuario y contraseña para iniciar sesion" textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="tfUsuario" layoutX="69.0" layoutY="136.0" />
+            <PasswordField fx:id="tfPassword" layoutX="71.0" layoutY="205.0" />
+            <Button layoutX="124.0" layoutY="264.0" mnemonicParsing="false" onAction="#btnClicVerificarSesion" text="Ingresar" />
+            <Label layoutX="70.0" layoutY="120.0" text="Usuario" />
+            <Label layoutX="70.0" layoutY="190.0" text="Contraseña" />
+            <Label fx:id="lbErrorPassword" layoutX="70.0" layoutY="230.0" textFill="RED" />
+            <Label fx:id="lbErrorUsuario" layoutX="70.0" layoutY="160.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
